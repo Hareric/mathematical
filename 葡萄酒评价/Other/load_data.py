@@ -31,8 +31,9 @@ def load_data(file_name, sheet_index=None):
 
 
 if __name__ == '__main__':
+    file_name = 'dataSet/data_1_1.xls'
     print "第一组 对 红"
-    all_data = load_data('dataSet/data_1.xls', 0)
+    all_data = load_data(file_name, 0)
     for i in range(27):  # 0 2
         sample_name = u"酒样品" + str(i+1)
         for j in range(len(all_data)):
@@ -44,7 +45,7 @@ if __name__ == '__main__':
                 break
 
     print "\n\n第一组 对 白"
-    all_data = load_data('dataSet/data_1.xls', 1)
+    all_data = load_data(file_name, 1)
     for i in range(28):  # 1
         sample_name = u"酒样品" + str(i + 1)
         for j in range(len(all_data)):
@@ -56,7 +57,7 @@ if __name__ == '__main__':
                 break
 
     print "\n\n第二组 对 红"
-    all_data = load_data('dataSet/data_1.xls', 2)
+    all_data = load_data(file_name, 2)
     for i in range(27):  # 0 2
         sample_name = u"酒样品" + str(i+1)
         for j in range(len(all_data)):
@@ -68,7 +69,7 @@ if __name__ == '__main__':
                 break
 
     print "\n\n第二组 对 白"
-    all_data = load_data('dataSet/data_1.xls', 3)
+    all_data = load_data(file_name, 3)
     for i in range(28):  # 3
         sample_name = i + 1
         for j in range(len(all_data)):
